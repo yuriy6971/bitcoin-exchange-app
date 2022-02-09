@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+}
+.grid_container {
+    width: 310px;
+    height: 390px;
+    margin-right: 40px;
+    display: grid;
+    grid-template-areas: "title_date  title_prise"
+                          "date_time  prise";
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 47px 1fr;
+    grid-row-gap: 2px;                     
+}
+
+.title_date_time {
+    grid-area: title_date;
+    border: 2.5px solid #515961;
+    border-right: none;
+    color: #3E464C;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-left: 8px;
+    padding-top: 4px;
+}
+.title_prise {
+    grid-area: title_prise;
+    border: 2.5px solid #515961;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: #3E464C;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-left: 8px;
+    padding-top: 4px;
+}
+.date_time {
+    grid-area: date_time;
+    border: 2.5px solid #515961;
+    border-radius: 2px;
+}
+.prise {
+    grid-area: prise;
+    border: 2.5px solid #515961;
+    border-radius: 2px;
+}
